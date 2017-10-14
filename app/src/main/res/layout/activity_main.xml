@@ -32,8 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Usuario o telefono" />
+                android:hint="Usuario o telefono"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/editText6"
