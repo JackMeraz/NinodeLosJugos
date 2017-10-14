@@ -51,13 +51,13 @@
                 android:text="Recuperar contraseña" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btningresar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ingresar" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnregistrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="¿eres nuevo ?registrate" />
