@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class RegisterRequest extends StringRequest {
 
-    private  static final  String REGISTER_REQUEST_URL="http://jugos.utrodeo.edu.mx";
+    private  static final  String REGISTER_REQUEST_URL="http://jugos.utrodeo.edu.mx/register.php";
     private Map<String,String> params;
     public RegisterRequest(String nombres, String ape_pat, String ape_mat, String user, String pass, String telefono, Response.Listener<String>listener){
         super(Method.POST, REGISTER_REQUEST_URL,listener,null);
