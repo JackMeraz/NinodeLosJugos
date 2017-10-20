@@ -42,7 +42,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
-        final String nombre= etnombre.getText().toString();
+        final String nombres= etnombre.getText().toString();
         final String ape_pat= etapellidop.getText().toString();
         final String ape_mat= etapellidom.getText().toString();
         final String user= etusuario.getText().toString();
@@ -74,7 +74,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
             }
         };
 
-        RegisterRequest registerRequest= new RegisterRequest(nombre, ape_pat, ape_mat, user, pass, telefono,respoListener);
+        RegisterRequest registerRequest= new RegisterRequest(nombres, ape_pat, ape_mat, user, pass, telefono,respoListener);
         RequestQueue queue= Volley.newRequestQueue(Registro.this);
         queue.add(registerRequest);
 
