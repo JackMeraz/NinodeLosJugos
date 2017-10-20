@@ -63,9 +63,12 @@
         android:id="@+id/editT_telefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:editable="false"
         android:ems="10"
         android:hint="Telefono"
-        android:inputType="textPersonName" />
+        android:inputType="phone"
+        android:maxLength="10"
+        />
 
     <Button
         android:id="@+id/btn_registrar"
