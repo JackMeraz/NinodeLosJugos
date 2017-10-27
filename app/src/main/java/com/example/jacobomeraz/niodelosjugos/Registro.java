@@ -58,6 +58,8 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                     boolean success = jsonResponse.getBoolean("success");
 
                     if (success) {
+
+
                         Intent intent= new Intent(Registro.this, MainActivity.class);
                         Registro.this.startActivity(intent);
 
