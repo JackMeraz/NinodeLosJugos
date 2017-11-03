@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnA,btnB;
-    EditText etnombre, etapellidop, etapellidom, etusuario, etcontraseña, ettelefono;
+    EditText etnombre, etapellidop, etapellidom, etusuario, etpass, ettelefono;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnB=(Button)findViewById(R.id.btningresar);
         btnA=(Button)findViewById(R.id.btnregistrar);
-
+        etusuario = (EditText) findViewById (R.id.txtusuario);
+        etpass = (EditText) findViewById(R.id.txtpass);
         btnA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final String user= etusuario.getText().toString();
-                final String pass= etcontraseña.getText().toString();
+                final String pass= etpass.getText().toString();
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -83,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        catch(Exception ex)
+                                {
+                                        // Procesar una excepción de sistema distinta de WebException
+                                }
 
 
                     }
